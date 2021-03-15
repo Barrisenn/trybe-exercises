@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Exercício 5.1 - JavaEscript </h1>
+    <div class="main-content">
+      <div class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </div>
+    </div>
+    <script>
+        
+        document.getElementsByTagName('p')[0].innerHTML = 'Desenvolvedor full-stack bem empregado e recebendo <strong> BEM!</strong>'
+        document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)'
+        document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white'
+        document.getElementsByClassName('title')[0].innerHTML = 'Exercício 5.1 - JavaScript'
+        
+        for (let index = 0; index < document.getElementsByTagName('p').length; index += 1) {
+            let texto = document.getElementsByTagName('p')[index].innerHTML
+            let textoMaiusculo = texto.toUpperCase()
+            document.getElementsByTagName('p')[index].innerHTML = textoMaiusculo
+        }
+        for (let index = 0; index < document.getElementsByTagName('p').length; index += 1) {
+            console.log(document.getElementsByTagName('p')[index].innerHTML)
+        }
+
+
+
+
+    </script>
+  </body>
+</html>
