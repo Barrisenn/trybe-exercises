@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+/* aplica efeitos hover */
+.creepy:hover {
+    background-color: red;
+    transition: 0.5s;
+}
+.zeew:hover {
+    background-color: blue;
+    transition: 0.5s;
+}
+.twitter:hover {
+    background-color: green;
+    transition: 0.5s;
+}
+/* aplica efeitos active */
+.creepy:active {
+    font-family: fantasy;
+}
+.zeew:active {
+    font-family: monospace;
+}
+.twitter:active {
+    font-family: cursive
+}
+/* aplica estilos às listas */
+ol, ul {
+    list-style: none;
+}
