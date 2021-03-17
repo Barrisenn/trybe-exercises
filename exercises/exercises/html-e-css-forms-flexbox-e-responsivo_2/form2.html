@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheer" type="text/css" href="style.css">
+    <link rel="stylesheet" href="DatePickerX-master/dist/css/DatePickerX.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+    <script src="DatePickerX-master/dist/js/DatePickerX.min.js"></script>
+    <title>Currículo</title>
+</head>
+<body>
+    <header>
+        <h1>Currículo</h1>
+    </header>
+    <main>
+        <form action="" method="GET">
+            <fieldset  id="dados-pessoais">
+                <div class="mb-3">
+                    <label for="name">Nome:</label>
+                    <input class="form-control" id="name" name="nome" type="text" maxlength="40" required >
+                    <br>
+                    <label class="col-sm-2 col-form-label" for="email">E-mail:</label>
+                    <input class="form-control" name="email" id="email" maxlength="50" required>
+                    <label for="cpf">CPF:</label>
+                    <input class="form-control" name="cpf" id="cpf" maxlength="11" required>
+                </div>
+                <div class="mb-3">            
+                    <label for="endereco">Endereço:</label>
+                    <input class="form-control" name="endereco" type="text" id="endereco" maxlength="200" required>
+                    <label for="cidade">Cidade:</label>
+                    <input class="form-control" name="cidade" id="cidade" type="text"  maxlength="28" required>
+                    <label for="estado">Estado:</label>
+                    <select class="form-select" name="estado" id="estado" required>
+                    </select>
+                </div>    
+                <br>
+                <label class="form-check-label" for="casa">Casa</label>
+                <input class="form-check-input" id="casa"type="radio"  required name="residencia" value="casa">
+                <label class="form-check-label" for="apartamento">Apartamento</label>
+                <input class="form-check-input"  id="apartamento" type="radio"  required name="residencia" value="apartamento">
+            </fieldset>
+            <div class="input-group" id="ultimo-emprego">
+                <span class="input-group-text">Resumo do Currículo</span>
+                <textarea class="form-control" id="resumo" required maxlength="1000"  name="resumo" cols="50" rows="10" placeholder="Seu resumo aqui"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="cargo">Cargo:</label>
+                <input class="form-control" name="cargo" id="cargo"type="text"  maxlength="40" required>
+                <br>
+                <label for="cargo-descricao">Descrição do Cargo</label>
+                <input class="form-control" name="descricao-do-cargo" id="cargo-descricao" type="text"  maxlength="500" required>
+                <br>
+                <label for="data-inicio">Data de início</label>
+                <input class="form-control" name="data-inicio" id="data-inicio" type="text"  required>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
