@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+@media screen and (max-width: 502px) {
+    body {
+        background-color: black;
+        color: blanchedalmond;
+    }
+    article p {
+        font-size: 24px;
+        text-align: justify;
+    }
+    article h1 {
+        text-align: center;
+    }
+    footer {
+        font-size: 20px;
+    }
+    footer h3 {
+        font-size: 20px;
+    }
+    footer h3 p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 502px) and (max-width: 1000px) {
+    body {
+        background-color: black;
+        color: blanchedalmond;
+    }
+    article p {
+        font-size: 20px;
+        text-align: justify;
+    }
+    article h1 {
+        text-align: center;
+    }
+    footer {
+        font-size: 12px;
+    }
+    footer h3 {
+        font-size: 12px;
+    }
+    footer h3 p {
+        font-size: 12px;
+    }
+}
